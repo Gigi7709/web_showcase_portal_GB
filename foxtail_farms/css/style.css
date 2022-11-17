@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+
+/* Nav CSS Starts*/
+nav{
+  width: 100%;
+  font-family: Philosopher;
+  font-size:20px;
+  box-shadow:0px 4px 3px #a06e4d;
+}
+
+nav.bg-dark{
+  background-color: #000 !important;
+  padding-right:20px;
+  }
+  
+  /* Search Bar */
+  .form-control:hover{
+    border:3px solid #e1a177;
+    transition:.5s;
+  }
+  
+  /* Search Button */
+  .btn-outline-success{
+    color:#fff !important;
+    border:1px solid #fff !important;
+  }
+  
+  .btn-outline-success:hover{
+    color:#000 !important;
+    border:1px solid #fff !important;
+    background-color: #e1a177 !important;
+    transition:1s;
+  }
+
+  #logo{
+    height: 90px;
+    padding-left: 20px;
+  }
+  /* Nav CSS Ends */
+
+
+  /* Carousel CSS Start */
+#carouselExampleCaptions, .carousel-inner{
+  width: 50vw !important;
+  transform: translateY(50px);
+  font-family: Montserrat;
+  border-radius: 10px;
+  /* ^ border radius added from in class critique */
+}
+
+#carouselExampleCaptions, .carousel-inner h1{
+  font-family: Lobster;
+}
+
+
+.carousel1{
+    background-color:rgba(0, 0, 0, 0.762);
+    width: 100%;
+    margin: auto;
+    left:0% !important;
+    padding: 80px;
+    font-family: Montserrat;
+}
+
+
+
+.carousel2{
+    transform: translateX(-180px);
+    text-shadow: -4px 4px 8px #000,
+                  2px 2px 8px #000,
+                  2px -2px 8px #000;
+                  -2px -2px 8px #000;
+}
+
+
+
+.carousel3{
+  transform: translateX(180px);
+  text-shadow: -4px 4px 8px #000,
+                2px 2px 8px #000,
+                2px -2px 8px #000;
+                -2px -2px 8px #000;
+}
+
+
+
+div.carousel-indicators{
+  transform: translateY(50px);
+  opacity: 0.3;
+}
+
+
+
+div.carousel-indicators:hover{
+  opacity: 1;
+}
+/* Carousel CSS Ends */
+
+
+/* Card Row CSS Start */
+.row{
+  transform:translateY(200px);
+  flex-wrap:nowrap !important;
+}
+
+.row h2{
+  font-family:Lobster;
+}
+
+.col-lg-4{
+  background-color: #e1a177;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  text-align:center;
+  margin: 10px;
+  padding: 10px;
+  color:#fff;
+  text-shadow: -1px 1px 10px #a06e4d,
+                1px 1px 8px #a06e4d,
+                1px -1px 8px #a06e4d,
+                -1px -1px 1px #a06e4d;
+  box-shadow:4px 4px 3px #a06e4d;
+  }
+
+.col-lg-4 .btn{
+  text-shadow:none;
+  font-family:Philosopher;
+}
+
+.col-lg-4 .btn:hover{
+  text-shadow:none;
+  box-shadow:4px 4px 3px #a06e4d;
+}
+/* Card Row CSS End */
+
+
+/* Features CSS Start */
+#featurette{
+  margin: 50px;
+  font-family: Montserrat;
+}
+
+.featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+  
+  .featurette-heading {
+    letter-spacing: -.05rem;
+  }
+
+.col-md-5{
+  margin-bottom: 30px;
+}
+
+.col-md-7 .text-muted{
+  color:#e1a177 !important;
+  margin-left: 10px;
+}
+
+.col-md-7 .btn-outline-dark{
+  font-family:philosopher;
+  font-size:20px;
+}
+
+.col-md-7 .btn-outline-dark:hover{
+  background-color: #e1a177; 
+  border:1px solid #e1a177;
+  box-shadow:4px 4px 3px #a06e4d;
+  transition:.5s;
+}
+
+.bd-placeholder-img{
+  border-radius: 10px;
+  box-shadow:4px 4px 3px #a06e4d;
+}
+
+#featurette hr{
+  transform: translateY(200px);
+  margin-bottom: 60px !important;
+  margin-top: 60px !important;
+}
+/* Feature CSS End */
+
+/* Footer CSS Start */
+footer{
+  transform: translateY(200px);
+  background-color: #000;
+  color:#fff;
+  width: 100% !important;
+  padding-top: 10px;
+}
+
+footer a{
+  color:#e1a177;
+}
+
+footer a:hover{
+  color:bisque;
+  transition:.5s;
+}
+/* Footer CSS End */
+@media only screen and (max-width:1400px){
+  footer{
+    width: 100% !important;
+    transform: scaleX(1.07) !important;
+  }
+}
+
+@media only screen and (max-width:1015px){
+  .carousel3{
+/*     display: none; */
+    transform: translateX(100px) !important;
+  }
+  
+  footer{
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width:940px){
+  .carousel2{
+    transform: translateX(-140px);
+    padding-top: 5px;
+  }
+}
+
+
+
+@media only screen and (max-width:777px){
+  .carousel2{
+    transform: translateX(-100px);
+    position: absolute;
+    top: 200px;
+    font-size: 12px;
+  }
+}
